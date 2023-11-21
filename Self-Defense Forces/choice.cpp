@@ -48,7 +48,7 @@ void choice::Update()
 		//isMove = true;
 	}
 
-	if (pad & KEY_INPUT_SPACE)
+	if ( KEY_INPUT_SPACE)
 	{
 		Menu.Draw();
 	}
