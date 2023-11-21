@@ -13,18 +13,57 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Player">
+      <UniqueIdentifier>{e4b73d72-e118-4812-8132-37529d6dd186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\utill">
+      <UniqueIdentifier>{27524dfb-51c4-4640-91ce-4654401b0f80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Player">
+      <UniqueIdentifier>{9003b36d-c4c3-49cf-88ac-84e9b6a5bc36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\utill">
+      <UniqueIdentifier>{75b49dd8-7b3a-4cb6-860d-321e17a32074}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="SceneBase.cpp">
+    <ClCompile Include="Player\PlayerBase.cpp">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="utill\Vec2.cpp">
+      <Filter>ソース ファイル\utill</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="choice.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="utill\Rect.cpp">
+      <Filter>ソース ファイル\utill</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SceneBase.h">
+    <ClInclude Include="Player\PlayerBase.h">
+      <Filter>ヘッダー ファイル\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="utill\Vec2.h">
+      <Filter>ヘッダー ファイル\utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="choice.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="utill\Rect.h">
+      <Filter>ヘッダー ファイル\utill</Filter>
+    </ClInclude>
+    <ClInclude Include="utill\Game.h">
+      <Filter>ヘッダー ファイル\utill</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

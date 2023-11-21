@@ -1,18 +1,25 @@
 #include "DxLib.h"
+#include "utill/Game.h"
+#include "Player/PlayerBase.h"
+#include "Scene.h"
+#include "choice.h"
 
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	// 一部の関数はDxLib_Init()の前に実行する必要がある
-	ChangeWindowMode(false);
+	ChangeWindowMode(true);
+	//画面サイズの変更
+	SetGraphMode(Game::kScreenWindidth, Game::kScreenHeight, Game::kColorDepth);
 
 	if (DxLib_Init() == -1)		// ＤＸライブラリ初期化処理
 	{
 		return -1;			// エラーが起きたら直ちに終了
 	}
-
-	SetDrawScreen(DX_SCREEN_BACK);
-
+	
+	PlayerBase player;
+	choice Choice;
+	Scene scene;
 	// ゲームループ
 	while (ProcessMessage() != -1)
 	{
@@ -23,6 +30,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		ClearDrawScreen();
 
 		// ゲームの処理
+
+		Choice.Update();
+		Choice.Draw();
+		player.Update();
+		player.Draw();
+		scene.Draw();
 
 
 		// 画面が切り替わるのを待つ

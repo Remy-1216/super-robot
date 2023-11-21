@@ -139,11 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="choice.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SceneBase.cpp" />
+    <ClCompile Include="Player\PlayerBase.cpp" />
+    <ClCompile Include="utill\Rect.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="utill\Vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SceneBase.h" />
+    <ClInclude Include="choice.h" />
+    <ClInclude Include="utill\Game.h" />
+    <ClInclude Include="Player\PlayerBase.h" />
+    <ClInclude Include="utill\Rect.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="utill\Vec2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
