@@ -1,13 +1,14 @@
 #include "DxLib.h"
 #include "choice.h"
-#include "utill/Vec2.h"
 #include "utill/Game.h"
+#include "menu.h"
 #include "Player/PlayerBase.h"
 
 namespace
 {
 	float kSpeed = 10.0f;
 }
+menu Menu;
 
 choice::choice()
 {
@@ -47,9 +48,9 @@ void choice::Update()
 		//isMove = true;
 	}
 
-	if (pad & PAD_INPUT_A)
+	if (pad & KEY_INPUT_SPACE)
 	{
-
+		Menu.Draw();
 	}
 	m_colRect.SetCenter(pos.x, pos.y, 40,40);
 }
@@ -58,19 +59,19 @@ void choice::Draw()
 {
 	if (pos.x > Game::kScreenWindidth)
 	{
-		pos.x = Game::kScreenWindidth - 40;
+		pos.x = Game::kScreenWindidth - 80;
 	}
 	if (pos.x < 0)
 	{
-		pos.x = 0 + 40;
+		pos.x = 0 + 80;
 	}
 	if (pos.y > Game::kScreenHeight)
 	{
-		pos.y = Game::kScreenHeight - 40;
+		pos.y = Game::kScreenHeight - 80;
 	}
 	if (pos.y < 0)
 	{
-		pos.y = 0 + 40;
+		pos.y = 0 + 80;
 	}
 
 	m_colRect.Draw(GetColor(0, 0, 255), false);

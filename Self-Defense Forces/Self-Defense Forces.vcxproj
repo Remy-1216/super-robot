@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClCompile Include="choice.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="MenuPlayer.cpp" />
     <ClCompile Include="Player\PlayerBase.cpp" />
     <ClCompile Include="utill\Rect.cpp" />
     <ClCompile Include="Scene.cpp" />
@@ -148,6 +150,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="choice.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="MenuPlayer.h" />
     <ClInclude Include="utill\Game.h" />
     <ClInclude Include="Player\PlayerBase.h" />
     <ClInclude Include="utill\Rect.h" />
