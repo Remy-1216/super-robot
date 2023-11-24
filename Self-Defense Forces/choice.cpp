@@ -20,32 +20,37 @@ choice::~choice()
 
 void choice::Update()
 {
-	//パットの十字キーを使用してカーソルを移動させる
-	int pad = GetJoypadInputState(DX_INPUT_KEY_PAD1);
+	GetHitKeyStateAll(key);
 	//bool isMove = false;   //移動中かどうか
 
-	if (pad & PAD_INPUT_UP)
+	if (key[KEY_INPUT_UP])
 	{
 		pos.y -= kSpeed;
 		//isMove = true;
 	}
 
-	if (pad & PAD_INPUT_DOWN)
+	if (key[KEY_INPUT_DOWN])
 	{
 		pos.y += kSpeed;
 		//isMove = true;
 	}
 
-	if (pad & PAD_INPUT_LEFT)
+	if (key[KEY_INPUT_LEFT])
 	{
 		pos.x -= kSpeed;
 		//isMove = true;
 	}
 
-	if (pad & PAD_INPUT_RIGHT)
+	if (key[KEY_INPUT_RIGHT])
 	{
 		pos.x += kSpeed;
 		//isMove = true;
+	}
+
+	if()
+	if (key[KEY_INPUT_SPACE])
+	{
+		Menu.Draw();
 	}
 
 	m_colRect.SetCenter(pos.x, pos.y, 40,40);
@@ -72,3 +77,4 @@ void choice::Draw()
 
 	m_colRect.Draw(GetColor(0, 0, 255), false);
 }
+

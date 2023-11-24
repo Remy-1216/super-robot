@@ -9,7 +9,6 @@ public:
 	~choice();
 	void Update();
 	void Draw();
-
 private:
 	//カーソル表示
 	Rect m_colRect;
@@ -17,5 +16,7 @@ private:
 	Vec2 pos = { 20.0f, 20.0f };
 	//プレイヤー
 	PlayerBase* m_pPlayer;
+
+	char key[256]; // キーが押されているフレーム数を格納する
 };
 
