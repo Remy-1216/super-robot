@@ -1,10 +1,11 @@
 #pragma once
-#include "utill/Vec2.h"
+#include "../utill/Vec2.h"
 class Enemy
 {
+public:
 	Enemy();
 	~Enemy();
-
+	
 	void Update();
 	void Draw();
 

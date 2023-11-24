@@ -48,10 +48,6 @@ void choice::Update()
 		//isMove = true;
 	}
 
-	if ( KEY_INPUT_SPACE)
-	{
-		Menu.Draw();
-	}
 	m_colRect.SetCenter(pos.x, pos.y, 40,40);
 }
 

@@ -1,6 +1,7 @@
 #include "DxLib.h"
 #include "utill/Game.h"
 #include "Player/PlayerBase.h"
+#include "Enemy/Enemy.h"
 #include "Scene.h"
 #include "choice.h"
 
@@ -18,6 +19,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	}
 	
 	PlayerBase player;
+	Enemy enemy;
 	choice Choice;
 	Scene scene;
 	// ゲームループ
@@ -31,10 +33,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		// ゲームの処理
 
+		
 		Choice.Update();
 		Choice.Draw();
 		player.Update();
 		player.Draw();
+		enemy.Draw();
 		scene.Draw();
 
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "utill/Vec2.h"
+#include "../utill/Vec2.h"
 
 class PlayerBase
 {	
