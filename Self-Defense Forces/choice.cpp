@@ -1,7 +1,7 @@
 #include "DxLib.h"
 #include "choice.h"
 #include "utill/Game.h"
-#include "menu.h"
+#include "menu/menu.h"
 #include "Player/PlayerBase.h"
 
 namespace

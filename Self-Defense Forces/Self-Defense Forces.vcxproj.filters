@@ -31,6 +31,12 @@
     <Filter Include="ヘッダー ファイル\Enemy">
       <UniqueIdentifier>{b1d9989b-b85e-4fd2-9b25-fe247e826a2c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\menu">
+      <UniqueIdentifier>{91bcb07b-834f-4939-a1cd-699bd46094eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\menu">
+      <UniqueIdentifier>{ddc67264-46a6-4cea-b78f-a51c8cc06058}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,17 +57,17 @@
     <ClCompile Include="utill\Rect.cpp">
       <Filter>ソース ファイル\utill</Filter>
     </ClCompile>
-    <ClCompile Include="menu.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuPlayer.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Enemy\Enemy.cpp">
       <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="utill\Key.cpp">
       <Filter>ソース ファイル\utill</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\menu.cpp">
+      <Filter>ソース ファイル\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\MenuPlayer.cpp">
+      <Filter>ソース ファイル\menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,17 +89,17 @@
     <ClInclude Include="utill\Game.h">
       <Filter>ヘッダー ファイル\utill</Filter>
     </ClInclude>
-    <ClInclude Include="menu.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuPlayer.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Enemy\Enemy.h">
       <Filter>ヘッダー ファイル\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="utill\Key.h">
       <Filter>ヘッダー ファイル\utill</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\menu.h">
+      <Filter>ヘッダー ファイル\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\MenuPlayer.h">
+      <Filter>ヘッダー ファイル\menu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
