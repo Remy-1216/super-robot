@@ -8,7 +8,7 @@
 
 namespace
 {
-	float kSpeed = 10.0f;
+	float kSpeed = 5.0f;
 	Vec2 aa(0,0);
 }
 menu Menu;
@@ -44,8 +44,6 @@ void choice::Update()
 			pos.x += kSpeed;
 		}
 	}
-	
-	
 	m_colRect.SetCenter(pos.x, pos.y, 40,40);
 }
 

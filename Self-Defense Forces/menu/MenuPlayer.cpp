@@ -3,7 +3,7 @@
 
 namespace
 {
-	int move = 50;
+	int move = 25.0f;
 }
 
 MenuPlayer::MenuPlayer():pos{980,100}
@@ -30,14 +30,12 @@ void MenuPlayer::Update()
 
 void MenuPlayer::Draw()
 {
-	
-	
 	DrawBox(950, 0, 1280, 300,
 		GetColor(255, 255, 255), true);
-	DrawString(1010, 100, "移動", GetColor(0, 0, 0));
-	DrawString(1010, 150, "攻撃", GetColor(0, 0, 0));
-	DrawString(1010, 200, "精神", GetColor(0, 0, 0));
-	DrawString(1010, 250, "能力", GetColor(0, 0, 0));
+	DrawString(1010, 50, "移動", GetColor(0, 0, 0));
+	DrawString(1010, 100, "攻撃", GetColor(0, 0, 0));
+	DrawString(1010, 150, "精神", GetColor(0, 0, 0));
+	DrawString(1010, 200, "能力", GetColor(0, 0, 0));
 
-	DrawString(pos.x, pos.y, "■", GetColor(255, 255, 255));
+	DrawString(pos.x, pos.y, "■", GetColor(0, 0, 0));
 }
