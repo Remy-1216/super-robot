@@ -34,6 +34,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		// ÉQÅ[ÉÄÇÃèàóù
 		Choice.Update();
 		Choice.Draw();
+		Choice.Spaceclick();
 		player.Update();
 		player.Draw();
 		enemy.Draw();

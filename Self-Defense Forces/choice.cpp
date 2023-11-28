@@ -21,27 +21,26 @@ choice::~choice()
 void choice::Update()
 {
 	GetHitKeyStateAll(key);
-
-	if (key[KEY_INPUT_UP])
+	if (click == false)
 	{
-		pos.y -= kSpeed;
+		if (key[KEY_INPUT_UP])
+		{
+			pos.y -= kSpeed;
+		}
+		if (key[KEY_INPUT_DOWN])
+		{
+			pos.y += kSpeed;
+		}
+		if (key[KEY_INPUT_LEFT])
+		{
+			pos.x -= kSpeed;
+		}
+		if (key[KEY_INPUT_RIGHT])
+		{
+			pos.x += kSpeed;
+		}
 	}
-	if (key[KEY_INPUT_DOWN])
-	{
-		pos.y += kSpeed;
-	}
-	if (key[KEY_INPUT_LEFT])
-	{
-		pos.x -= kSpeed;
-	}
-	if (key[KEY_INPUT_RIGHT])
-	{
-		pos.x += kSpeed;
-	}
-	if (key[KEY_INPUT_SPACE])
-	{
-		Menu.Draw();
-	}
+	
 	
 	m_colRect.SetCenter(pos.x, pos.y, 40,40);
 }
@@ -66,6 +65,19 @@ void choice::Draw()
 	}
 
 	m_colRect.Draw(GetColor(0, 0, 255), false);
+}
+
+void choice::Spaceclick()
+{
+	if (key[KEY_INPUT_SPACE])
+	{
+		Menu.Draw();
+		click = true;
+	}
+	else
+	{
+		click = false;
+	}
 }
 
 void choice::Playerpos()
