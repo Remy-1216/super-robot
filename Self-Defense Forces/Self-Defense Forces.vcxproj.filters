@@ -60,6 +60,9 @@
     <ClCompile Include="Enemy\Enemy.cpp">
       <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
+    <ClCompile Include="utill\Key.cpp">
+      <Filter>ソース ファイル\utill</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player\PlayerBase.h">
@@ -88,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="Enemy\Enemy.h">
       <Filter>ヘッダー ファイル\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="utill\Key.h">
+      <Filter>ヘッダー ファイル\utill</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

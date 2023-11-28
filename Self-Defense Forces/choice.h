@@ -9,6 +9,9 @@ public:
 	~choice();
 	void Update();
 	void Draw();
+
+	//カーソルの座標がプレイヤーの座標と重なっているか
+	void Playerpos();
 private:
 	//カーソル表示
 	Rect m_colRect;
@@ -17,6 +20,7 @@ private:
 	//プレイヤー
 	PlayerBase* m_pPlayer;
 
-	char key[256]; // キーが押されているフレーム数を格納する
+	// キーが押されているフレーム数を格納する
+	char key[256]; 
 };
 
