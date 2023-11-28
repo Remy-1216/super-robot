@@ -1,8 +1,5 @@
 #include"DxLib.h"
 #include "menu.h"
-
-
-
 menu::menu()
 {
 

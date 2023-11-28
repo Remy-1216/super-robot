@@ -38,7 +38,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		player.Update();
 		player.Draw();
 		enemy.Draw();
-		scene.Draw();
+		if (Choice.click == false)
+		{
+			scene.Draw();
+		}
+		
 
 
 		// ‰æ–Ê‚ªØ‚è‘Ö‚í‚é‚Ì‚ğ‘Ò‚Â

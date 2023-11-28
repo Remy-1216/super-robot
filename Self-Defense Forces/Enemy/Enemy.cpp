@@ -1,7 +1,7 @@
 #include "DxLib.h"
 #include "Enemy.h"
 
-Enemy::Enemy():m_pos(1000,200)
+Enemy::Enemy():m_pos(1000,600)
 {
 	m_graphEnemy = LoadGraph("image/enemy/enemy.png");
 }

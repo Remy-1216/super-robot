@@ -16,6 +16,9 @@ public:
 	//カーソルの座標がプレイヤーの座標と重なっているか
 	void Playerpos();
 
+	//クリックしたかどうか
+	bool click = false;
+
 private:
 	//カーソル表示
 	Rect m_colRect;
@@ -23,9 +26,11 @@ private:
 	Vec2 pos = { 20.0f, 20.0f };
 	//プレイヤー
 	PlayerBase* m_pPlayer;
-	//クリックしたかどうか
-	bool click = false;
+	
 	// キーが押されているフレーム数を格納する
 	char key[256]; 
+
+	//プレイヤーの位置にいるかどうか
+	bool playerPos = false; 
 };
 

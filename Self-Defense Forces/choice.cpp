@@ -1,15 +1,19 @@
 #include "DxLib.h"
 #include "choice.h"
 #include "utill/Game.h"
+#include "utill/Key.h"
 #include "menu/menu.h"
+#include "menu/MenuPlayer.h"
 #include "Player/PlayerBase.h"
 
 namespace
 {
 	float kSpeed = 10.0f;
+	Vec2 aa(0,0);
 }
 menu Menu;
-
+MenuPlayer menuPlayer;
+PlayerBase player;
 choice::choice()
 {
 }
@@ -69,20 +73,37 @@ void choice::Draw()
 
 void choice::Spaceclick()
 {
+	
 	if (key[KEY_INPUT_SPACE])
 	{
+		Playerpos();
 		Menu.Draw();
 		Menu.Update();
 		click = true;
+		if (playerPos == true)
+		{
+			menuPlayer.Draw();
+			menuPlayer.Update();
+		}
 	}
 	else
 	{
+		SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 		click = false;
 	}
+	
 }
 
 void choice::Playerpos()
 {
-	const Vec2 target = m_pPlayer->GetPos();
+	int playerX = player.m_pos.x;
+	int playerY = player.m_pos.y;
+	int posX = pos.x -20.0f;
+	int posY = pos.y -20.0f;
+
+      	if ((playerX - posX == 0) && (playerY - posY == 0))
+	{
+		playerPos = true;
+	}
 }
 
