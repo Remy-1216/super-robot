@@ -22,6 +22,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	Enemy enemy;
 	choice Choice;
 	Scene scene;
+
 	// ÉQÅ[ÉÄÉãÅ[Év
 	while (ProcessMessage() != -1)
 	{
