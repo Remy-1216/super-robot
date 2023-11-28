@@ -3,7 +3,8 @@
 
 namespace
 {
-	int kSpeed = 1;
+	int kPosX = 80;
+	int kPosY = 200;
 }
 
 PlayerBase::PlayerBase():m_pos(80,200)

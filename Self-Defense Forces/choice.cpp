@@ -72,6 +72,7 @@ void choice::Spaceclick()
 	if (key[KEY_INPUT_SPACE])
 	{
 		Menu.Draw();
+		Menu.Update();
 		click = true;
 	}
 	else
@@ -82,5 +83,6 @@ void choice::Spaceclick()
 
 void choice::Playerpos()
 {
+	const Vec2 target = m_pPlayer->GetPos();
 }
 
